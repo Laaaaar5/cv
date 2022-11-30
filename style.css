@@ -48,8 +48,12 @@ nav > a + a {
 
 nav > a:hover {
   text-decoration: underline;
-  color: white;
+  color: red;
   font-weight: bolder;
+}
+
+nav > a:active {
+color: white;
 }
 
 .profession::after {
