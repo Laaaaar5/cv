@@ -53,8 +53,17 @@ nav > a:hover {
 }
 
 nav > a:active {
-color: white;
+  color: white;
 }
 
 .profession::after {
-    content: "💻";
+  content: "💻";
+}
+
+.experience-heading {
+  display: inline-block;
+}
+
+.experience-subheading {
+  display: inline-block;
+}
