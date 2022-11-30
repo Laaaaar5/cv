@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  margin: 0px;
+  background-color: lightgray;
+}
+
+.main > * {
+  border-top: 2px solid grey;
+}
+
+.main > *:first-child {
+  border-top: none;
+}
+
+.header {
+  padding: 35px;
+  text-align: center;
+  background-image: linear-gradient(45deg, yellow 5%, orange 70%);
+}
+
+.main {
+  padding: 35px;
+}
+
+nav > a {
+  text-decoration: none;
+  color: black;
+}
+
+nav > a + a {
+  margin: 30px;
+}
+
+nav > a:hover {
+  text-decoration: underline;
+  color: white;
+  font-weight: bolder;
+}
