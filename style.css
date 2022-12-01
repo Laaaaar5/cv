@@ -19,6 +19,27 @@ body {
   background-color: lightgray;
 }
 
+nav > a {
+  text-decoration: none;
+  color: black;
+}
+
+nav > a + a {
+  margin: 30px;
+}
+
+nav > a:hover {
+  text-decoration: underline;
+  color: red;
+  font-weight: bolder;
+  background-color: lightgray;
+  border-radius: 15px;
+}
+
+nav > a:active {
+  color: white;
+}
+
 .main > * {
   border-top: 2px solid grey;
 }
@@ -35,29 +56,23 @@ body {
 
 .main {
   padding: 35px;
-}
-
-nav > a {
-  text-decoration: none;
-  color: black;
-}
-
-nav > a + a {
-  margin: 30px;
-}
-
-nav > a:hover {
-  text-decoration: underline;
-  color: red;
-  font-weight: bolder;
-}
-
-nav > a:active {
-  color: white;
+  padding-left: 55px;
+  margin: 0 auto;
 }
 
 .profession::after {
   content: "💻";
+}
+
+.hire-me {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 10px;
+  background-color: lightgray;
+  color: orangered;
+  text-decoration: double;
+  border-radius: 10px;
 }
 
 .experience-heading {
@@ -66,6 +81,11 @@ nav > a:active {
 
 .experience-subheading {
   display: inline-block;
+}
+
+.article-heading {
+  position: relative;
+  left: -20px;
 }
 
 ::selection {
