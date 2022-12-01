@@ -67,3 +67,8 @@ nav > a:active {
 .experience-subheading {
   display: inline-block;
 }
+
+::selection {
+  background-color: black;
+  color: white;
+}
