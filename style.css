@@ -1,8 +1,12 @@
 *,
 *::after,
 *::before {
-  font-family: "Courier New", Courier, monospace;
   box-sizing: border-box;
+}
+
+html {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
 }
 
 h1,
@@ -15,49 +19,45 @@ h6 {
 }
 
 body {
-  margin: 0px;
+  margin: 0;
   background-color: lightgray;
 }
 
-nav > a {
+.header {
+  padding: 3rem 1rem;
+  padding-top: 4, 5rem;
+  text-align: center;
+  background-image: linear-gradient(45deg, yellow 5%, orange 70%);
+  position: relative;
+}
+
+.heading-group {
+  font-size: 4rem;
+}
+
+.profession {
+  font-size: 2.75rem;
+}
+
+.nav-link {
   text-decoration: none;
   color: black;
+  margin: 2rem;
+  font-size: 2rem;
 }
 
-nav > a + a {
-  margin: 30px;
-}
-
-nav > a:hover {
+.nav-link:hover {
   text-decoration: underline;
   color: red;
   font-weight: bolder;
   background-color: lightgray;
-  border-radius: 15px;
+  border-radius: 1rem;
+  position: relative;
+  padding: 1rem;
 }
 
-nav > a:active {
+.nav-link:active {
   color: white;
-}
-
-.main > * {
-  border-top: 2px solid grey;
-}
-
-.main > *:first-child {
-  border-top: none;
-}
-
-.header {
-  padding: 35px;
-  text-align: center;
-  background-image: linear-gradient(45deg, yellow 5%, orange 70%);
-}
-
-.main {
-  padding: 35px;
-  padding-left: 55px;
-  margin: 0 auto;
 }
 
 .profession::after {
@@ -66,13 +66,29 @@ nav > a:active {
 
 .hire-me {
   position: absolute;
-  right: 20px;
-  top: 20px;
-  padding: 10px;
+  right: 1.5rem;
+  top: 1.5rem;
+  padding: 1rem;
   background-color: lightgray;
   color: orangered;
   text-decoration: double;
-  border-radius: 10px;
+  border-radius: 1rem;
+}
+
+.main {
+  padding: 2.2rem;
+  padding-top: 5rem;
+  padding-left: 3.5rem;
+  margin: 0 auto;
+  max-width: 100rem;
+}
+
+.main > * {
+  border-top: 0.125rem solid grey;
+}
+
+.main > *:first-child {
+  border-top: none;
 }
 
 .experience-heading {
@@ -85,7 +101,7 @@ nav > a:active {
 
 .article-heading {
   position: relative;
-  left: -20px;
+  left: -1.5rem;
 }
 
 ::selection {
